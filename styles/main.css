@@ -1,20 +1,50 @@
+.movie-container {
+    overflow: hidden;
+    padding: 20px;  /* Add padding to account for the pop-out */
+    margin: 10px;
+}
+
+h1 {
+    font-family: 'Lobster'; /* Use the name of your chosen font */
+    /* Additional styles */
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: #f64646; /* Adjust color as needed */
+
+    border: 2px solid #f64646; /* Adds a border */
+    padding: 10px 20px; /* Adds space inside the box */
+    display: inline-block; /* Makes the box fit the content */
+    background-color: #fff; /* Optional: adds a background color */
+    box-shadow: 0 0 10px rgba(246, 70, 70, 0.3); /* Optional: adds a subtle shadow */
+
+    
+}
+
+  
+
 .movie {
     flex-basis: 300px;
     flex-grow: 1;
     max-width: 400px;
-    margin-bottom: 20px;
+    margin: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(241, 80, 80, 0.877);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
+.movie {
+    transition: all 0.3s ease-in-out;
+}
+
 .movie:hover {
-    transform: translateY(-5px);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    transform-origin: center;
+    transform: translateY(-15px) scale(1.15);
+    box-shadow: 0 15px 30px rgba(241, 80, 80, 0.877);
+    z-index: 1;
 }
 
 .movie__poster {
@@ -29,11 +59,11 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333333;
+    color: #f31616;
 }
 
 .movie__description {
     font-size: 14px;
-    color: #666666;
+    color: #7f0e0e;
     line-height: 1.5;
 }
